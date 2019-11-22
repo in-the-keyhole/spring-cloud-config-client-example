@@ -1,0 +1,14 @@
+spring:
+  application:
+      name: investment-position-config   
+  cloud:
+    config:
+       uri: http://localhost:8888   
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+# Uncomment this section for local development. DO NOT check-in this file with this section uncommented.
+#spring.cloud.config.uri=http://localhost:8889
